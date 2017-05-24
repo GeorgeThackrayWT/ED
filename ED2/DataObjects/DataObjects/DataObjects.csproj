@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{84F2211D-E47C-449C-A86B-09D7BBD75849}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DataObjects</RootNamespace>
+    <AssemblyName>DataObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DAOS\AcquisitionUnit.cs" />
+    <Compile Include="DAOS\AccountWTActivityMap.cs" />
+    <Compile Include="DAOS\AcquisitionType.cs" />
+    <Compile Include="DAOS\AcquisitionUnitInternalAuditMap.cs" />
+    <Compile Include="DAOS\AcquisitionUnitRow.cs" />
+    <Compile Include="DAOS\Acronym.cs" />
+    <Compile Include="DAOS\AcronymType.cs" />
+    <Compile Include="DAOS\ActiveIngredient.cs" />
+    <Compile Include="DAOS\AdministrationArea.cs" />
+    <Compile Include="DAOS\Aim.cs" />
+    <Compile Include="DAOS\Application.cs" />
+    <Compile Include="DAOS\ApplicationMethod.cs" />
+    <Compile Include="DAOS\ApplicationType.cs" />
+    <Compile Include="DAOS\ApplicationUnit.cs" />
+    <Compile Include="DAOS\Attribute.cs" />
+    <Compile Include="DAOS\Audit.cs" />
+    <Compile Include="DAOS\AuthorisationLevel.cs" />
+    <Compile Include="DAOS\AwardingScheme.cs" />
+    <Compile Include="DAOS\BiosecurityZone.cs" />
+    <Compile Include="DAOS\BoundarySection.cs" />
+    <Compile Include="DAOS\CommentsOnTerm.cs" />
+    <Compile Include="DAOS\Configuration.cs" />
+    <Compile Include="DAOS\ConservationFeature.cs" />
+    <Compile Include="DAOS\Contact.cs" />
+    <Compile Include="DAOS\ContactStatu.cs" />
+    <Compile Include="DAOS\ControlMeasure.cs" />
+    <Compile Include="DAOS\ControlMeasureType.cs" />
+    <Compile Include="DAOS\Country.cs" />
+    <Compile Include="DAOS\County.cs" />
+    <Compile Include="DAOS\Customer.cs" />
+    <Compile Include="DAOS\Department.cs" />
+    <Compile Include="DAOS\Designation.cs" />
+    <Compile Include="DAOS\DesignationType.cs" />
+    <Compile Include="DAOS\Designator.cs" />
+    <Compile Include="DAOS\DisposedInterest.cs" />
+    <Compile Include="DAOS\DocumentArea.cs" />
+    <Compile Include="DAOS\DocumentBinary.cs" />
+    <Compile Include="DAOS\DocumentExtension.cs" />
+    <Compile Include="DAOS\DocumentName.cs" />
+    <Compile Include="DAOS\DocumentQueue.cs" />
+    <Compile Include="DAOS\DocumentStatu.cs" />
+    <Compile Include="DAOS\DocumentType.cs" />
+    <Compile Include="DAOS\DocuwareCabinet.cs" />
+    <Compile Include="DAOS\DocuwareConfiguration.cs" />
+    <Compile Include="DAOS\DocuwareLoginType.cs" />
+    <Compile Include="DAOS\DrainageRate.cs" />
+    <Compile Include="DAOS\EmailTask.cs" />
+    <Compile Include="DAOS\Entity.cs" />
+    <Compile Include="DAOS\EntityType.cs" />
+    <Compile Include="DAOS\Evaluation.cs" />
+    <Compile Include="DAOS\EvaluationType.cs" />
+    <Compile Include="DAOS\Expenditure.cs" />
+    <Compile Include="DAOS\ExpenditureGrownMethod.cs" />
+    <Compile Include="DAOS\ExpenditureProduct.cs" />
+    <Compile Include="DAOS\ExpenditureProductSiteMap.cs" />
+    <Compile Include="DAOS\ExpenditureProductUnitType.cs" />
+    <Compile Include="DAOS\ExternalLink.cs" />
+    <Compile Include="DAOS\ExternalLinkType.cs" />
+    <Compile Include="DAOS\Farming.cs" />
+    <Compile Include="DAOS\Feature.cs" />
+    <Compile Include="DAOS\FeatureMonitoring.cs" />
+    <Compile Include="DAOS\FeatureType.cs" />
+    <Compile Include="DAOS\FireAssessment.cs" />
+    <Compile Include="DAOS\FishingType.cs" />
+    <Compile Include="DAOS\FollowOnActionType.cs" />
+    <Compile Include="DAOS\Funding.cs" />
+    <Compile Include="DAOS\FundingStatu.cs" />
+    <Compile Include="DAOS\FundingType.cs" />
+    <Compile Include="DAOS\GlobalConfiguration.cs" />
+    <Compile Include="DAOS\Grant.cs" />
+    <Compile Include="DAOS\GrantBody.cs" />
+    <Compile Include="DAOS\Harvesting.cs" />
+    <Compile Include="DAOS\HarvestingOperationType.cs" />
+    <Compile Include="DAOS\Hazard.cs" />
+    <Compile Include="DAOS\HazardAction.cs" />
+    <Compile Include="DAOS\HazardCategory.cs" />
+    <Compile Include="DAOS\HazardFireRisk.cs" />
+    <Compile Include="DAOS\HazardFireRiskCategory.cs" />
+    <Compile Include="DAOS\HazardFireRiskType.cs" />
+    <Compile Include="DAOS\HazardIncidentHistory.cs" />
+    <Compile Include="DAOS\HazardLocation.cs" />
+    <Compile Include="DAOS\HazardOwnership.cs" />
+    <Compile Include="DAOS\HazardType.cs" />
+    <Compile Include="DAOS\HelpCache.cs" />
+    <Compile Include="DAOS\HighwayAuthority.cs" />
+    <Compile Include="DAOS\Income.cs" />
+    <Compile Include="DAOS\IncomeProduct.cs" />
+    <Compile Include="DAOS\IncomeProductSiteMap.cs" />
+    <Compile Include="DAOS\InterestLet.cs" />
+    <Compile Include="DAOS\InternalAudit.cs" />
+    <Compile Include="DAOS\InternalAuditGrade.cs" />
+    <Compile Include="DAOS\InternalAuditObservation.cs" />
+    <Compile Include="DAOS\InternalAuditRow.cs" />
+    <Compile Include="DAOS\LandRegistration.cs" />
+    <Compile Include="DAOS\Licence.cs" />
+    <Compile Include="DAOS\LicenceAgreement.cs" />
+    <Compile Include="DAOS\LicencePeriod.cs" />
+    <Compile Include="DAOS\LicenceType.cs" />
+    <Compile Include="DAOS\LookupTable.cs" />
+    <Compile Include="DAOS\MajorManagementConstraint.cs" />
+    <Compile Include="DAOS\MajorManagementConstraintMap.cs" />
+    <Compile Include="DAOS\MajorManagementConstraintType.cs" />
+    <Compile Include="DAOS\ManagementPlan.cs" />
+    <Compile Include="DAOS\ManagementRegime.cs" />
+    <Compile Include="DAOS\ManagementUnit.cs" />
+    <Compile Include="DAOS\ManagementUnitAttribute.cs" />
+    <Compile Include="DAOS\ManagementUnitGismo.cs" />
+    <Compile Include="DAOS\ManagementUnitRow.cs" />
+    <Compile Include="DAOS\ManagementUnitWebSearch.cs" />
+    <Compile Include="DAOS\ManagementUnitWorkOrderMap.cs" />
+    <Compile Include="DAOS\MapUrl.cs" />
+    <Compile Include="DAOS\MapUrlType.cs" />
+    <Compile Include="DAOS\MetadataField.cs" />
+    <Compile Include="DAOS\MetadataFieldType.cs" />
+    <Compile Include="DAOS\MetadataRecord.cs" />
+    <Compile Include="DAOS\MobileChange.cs" />
+    <Compile Include="DAOS\NonFSCType.cs" />
+    <Compile Include="DAOS\NoticeOfTermination.cs" />
+    <Compile Include="DAOS\Order.cs" />
+    <Compile Include="DAOS\PartDisposal.cs" />
+    <Compile Include="DAOS\Pesticide.cs" />
+    <Compile Include="DAOS\PesticideEntry.cs" />
+    <Compile Include="DAOS\PesticideProduct.cs" />
+    <Compile Include="DAOS\PlantedBy.cs" />
+    <Compile Include="DAOS\PlantingAccessType.cs" />
+    <Compile Include="DAOS\PlantingType.cs" />
+    <Compile Include="DAOS\PlantType.cs" />
+    <Compile Include="DAOS\PortfolioCategory.cs" />
+    <Compile Include="DAOS\PropertyManagedBy.cs" />
+    <Compile Include="DAOS\ProvenanceZone.cs" />
+    <Compile Include="DAOS\ProvisionsNotice.cs" />
+    <Compile Include="DAOS\PublicInfo.cs" />
+    <Compile Include="DAOS\ReasonForUse.cs" />
+    <Compile Include="DAOS\Region.cs" />
+    <Compile Include="DAOS\RentReview.cs" />
+    <Compile Include="DAOS\ReportBinary.cs" />
+    <Compile Include="DAOS\ReportQueue.cs" />
+    <Compile Include="DAOS\RightsType.cs" />
+    <Compile Include="DAOS\RiskAssessment.cs" />
+    <Compile Include="DAOS\Role.cs" />
+    <Compile Include="DAOS\SeasonalActivity.cs" />
+    <Compile Include="DAOS\SeverityProbabilityOfHarm.cs" />
+    <Compile Include="DAOS\SiteCategory.cs" />
+    <Compile Include="DAOS\SiteClassification.cs" />
+    <Compile Include="DAOS\SizeIn.cs" />
+    <Compile Include="DAOS\Species.cs" />
+    <Compile Include="DAOS\Structure.cs" />
+    <Compile Include="DAOS\StructureCondition.cs" />
+    <Compile Include="DAOS\StructureType.cs" />
+    <Compile Include="DAOS\SubCompartment.cs" />
+    <Compile Include="DAOS\SubCompartmentDesignationMap.cs" />
+    <Compile Include="DAOS\SubCompartmentFeatureMap.cs" />
+    <Compile Include="DAOS\Supplier.cs" />
+    <Compile Include="DAOS\sysdiagram.cs" />
+    <Compile Include="DAOS\TabletChange.cs" />
+    <Compile Include="DAOS\TabletError.cs" />
+    <Compile Include="DAOS\TabletOrdersQueue.cs" />
+    <Compile Include="DAOS\Menu.cs" />
+    <Compile Include="DAOS\Task.cs" />
+    <Compile Include="DAOS\TaskRow.cs" />
+    <Compile Include="DAOS\TaxCode.cs" />
+    <Compile Include="DAOS\Tender.cs" />
+    <Compile Include="DAOS\Tenure.cs" />
+    <Compile Include="DAOS\TerrainType.cs" />
+    <Compile Include="DAOS\test.cs" />
+    <Compile Include="DAOS\Theme.cs" />
+    <Compile Include="DAOS\ThirdPartyAgreement.cs" />
+    <Compile Include="DAOS\ThirdPartyRight.cs" />
+    <Compile Include="DAOS\ThirdPartyService.cs" />
+    <Compile Include="DAOS\ThirdPartyType.cs" />
+    <Compile Include="DAOS\TreePlanting.cs" />
+    <Compile Include="DAOS\TreePlantingDetail.cs" />
+    <Compile Include="DAOS\TypeOfInformation.cs" />
+    <Compile Include="DAOS\User.cs" />
+    <Compile Include="DAOS\UserRole.cs" />
+    <Compile Include="DAOS\VATRateLock.cs" />
+    <Compile Include="DAOS\WayPublicRight.cs" />
+    <Compile Include="DAOS\WoodlandConditionDafor.cs" />
+    <Compile Include="DAOS\WoodlandConditionExtension.cs" />
+    <Compile Include="DAOS\WoodlandConditionStratum.cs" />
+    <Compile Include="DAOS\WoodlandConditionSubSection.cs" />
+    <Compile Include="DAOS\WorkOrder.cs" />
+    <Compile Include="DTOS\ApplicationDto.cs" />
+    <Compile Include="DTOS\DateRangeFilter.cs" />
+    <Compile Include="DTOS\ManagementUnit.cs" />
+    <Compile Include="DTOS\ManagementUnitsDTO.cs" />
+    <Compile Include="DTOS\MenuDTO.cs" />
+    <Compile Include="DTOS\PropertyDto.cs" />
+    <Compile Include="DTOS\Task.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAOS\TaskCategory.cs" />
+    <Compile Include="DTOS\SimpleTaskDto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MvvmHelpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Refractored.MvvmHelpers.1.3.0.28-beta\lib\netstandard1.0\MvvmHelpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net.Async, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQLite.Net.Async-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.Async.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SQLiteNetExtensionsAsync-PCL\SQLiteNetExtensionsAsync-PCL.csproj">
+      <Project>{f206ca90-929f-4c1b-888a-5faf6ee67d3c}</Project>
+      <Name>SQLiteNetExtensionsAsync-PCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SQLiteNetExtensions\SQLiteNetExtensions-PCL.csproj">
+      <Project>{f723017d-ede5-49cc-a84f-881c067c6004}</Project>
+      <Name>SQLiteNetExtensions-PCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\Utils\Utils.csproj">
+      <Project>{05a3fcd3-b6be-4003-b69e-7711b10033c7}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

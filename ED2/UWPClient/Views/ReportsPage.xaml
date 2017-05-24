@@ -1,0 +1,25 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:grid="using:Telerik.UI.Xaml.Controls.Grid"
+      x:Class="WT.UWP.ED2.Views.ReportsPage"
+      mc:Ignorable="d">
+  
+  <Grid Background="{StaticResource PageBackgroundBrush}">
+    <grid:RadDataGrid
+                    x:Name="DataGrid"
+                    ItemsSource="{x:Bind Path=ViewModel.Reports  }"
+                    AutoGenerateColumns="False"
+
+                            >
+
+      <grid:RadDataGrid.Columns>
+        <grid:DataGridTextColumn PropertyName="Name"/>
+        <grid:DataGridTextColumn PropertyName="Public"/>
+      
+      </grid:RadDataGrid.Columns>
+    </grid:RadDataGrid>
+
+  </Grid>
+</Page>
